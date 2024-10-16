@@ -27,7 +27,7 @@ game:GetService("ReplicatedStorage"):WaitForChild("ReplicatedModules"):WaitForCh
 end
 end
 
-if game.PlaceId == 8023712967 then do
+if game.PlaceId == 8023712967 or 6846458508  then do
 
 
 
