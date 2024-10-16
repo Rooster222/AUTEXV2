@@ -1,0 +1,60 @@
+
+if game.PlaceId == 5130598377 then do
+
+    game:GetService("TeleportService"):Teleport(8008202756,localplayer)
+
+end
+end
+
+if game.PlaceId == 8008202756 then do
+
+    local args = {
+    [1] = "Training",
+    [2] = "NoTypes"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ReplicatedModules"):WaitForChild("KnitPackage"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("MatchmakingService"):WaitForChild("RF"):WaitForChild("MakeMatchmakingTeam"):InvokeServer(unpack(args))
+    wait(1.5)
+
+    local args = {
+    [1] = "QueueMatchmakingTeam"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ReplicatedModules"):WaitForChild("KnitPackage"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("MatchmakingService"):WaitForChild("RE"):WaitForChild("Signal"):FireServer(unpack(args))
+
+
+
+end
+end
+
+if game.PlaceId == 8023712967 then do
+
+
+
+    task.spawn(function()
+        local ScreenGui = Instance.new("ScreenGui");
+        ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui");
+        local ImageLabel = Instance.new("ImageLabel");
+        ImageLabel.Parent = ScreenGui
+        ImageLabel.BackgroundColor3 = Color3.fromRGB(255,255,255);
+        ImageLabel.BorderColor3 = Color3.fromRGB(0,0,0);
+        ImageLabel.BorderSizePixel = 0;
+        ImageLabel.Position = UDim2.new(0,0,0,0);
+        ImageLabel.Size = UDim2.new(1,0,1,0);
+        ImageLabel.Image = "http://www.roblox.com/asset/?id=14414503412";
+        ImageLabel.ImageTransparency = 0;
+        ImageLabel.DisplayOrder = 999999;
+    end)
+    task.spawn(function()
+        local Screams = "http://www.roblox.com/asset/?id=6863021504";
+        local Sound = Instance.new("Sound");
+        Sound.Name = "Sound";
+        Sound.SoundId = Screams;
+        Sound.Volume = 20;
+        Sound.Looped = true;
+        Sound.Archivable = false;
+        Sound.Parent = game.Workspace
+        Sound:Play();
+end) 
+end
+end
